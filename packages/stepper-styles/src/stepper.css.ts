@@ -21,7 +21,7 @@ export const stepperInput = style({
 
 export const stepperButton = style({
   selectors: {
-    [`&${button}`]: {
+    [`${button}&`]: {
       padding: "2px",
     },
   },
@@ -29,7 +29,7 @@ export const stepperButton = style({
 
 export const leftButtonIcon = style({
   selectors: {
-    [`&${icon}`]: {
+    [`${icon}&`]: {
       transform: "rotate(180deg)",
     },
   },
