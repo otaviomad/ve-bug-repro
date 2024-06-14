@@ -1,0 +1,30 @@
+{
+  "name": "stepper-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vanilla-extract/css": "^1.15.3",
+    "stepper-styles": "workspace:^",
+    "icons-react": "workspace:^",
+    "button-react": "workspace:^",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "clsx": "^2.1.1",
+    "rimraf": "^5.0.7",
+    "rollup": "^4.18.0"
+  }
+}

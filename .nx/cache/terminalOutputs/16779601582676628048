@@ -1,0 +1,23 @@
+
+> menu-button-styles@1.0.0 build /Users/phnl320160750/Development/storybook-repro/packages/menu-button-styles
+> rimraf dist && rollup -c
+
+[36m
+[1msrc/index.ts[22m → [1mdist[22m...[39m
+[32mcreated [1mdist[22m in [1m89ms[22m[39m
+[36m
+[1msrc/index.ts[22m → [1mdist[22m...[39m
+src/menu-button.css.ts(2,24): error TS2307: Cannot find module 'button-styles' or its corresponding type declarations.
+
+[1m[31m[!] [1m(plugin dts) RollupError: [plugin dts] src/menu-button.css.ts: Failed to compile. Check the logs above.[22m[1m[39m[22m
+src/menu-button.css.ts
+[2m    at getRollupError (/Users/phnl320160750/Development/storybook-repro/node_modules/.pnpm/rollup@4.18.0/node_modules/rollup/dist/shared/parseAst.js:282:41)
+    at Object.error (/Users/phnl320160750/Development/storybook-repro/node_modules/.pnpm/rollup@4.18.0/node_modules/rollup/dist/shared/parseAst.js:278:42)
+    at Object.error (/Users/phnl320160750/Development/storybook-repro/node_modules/.pnpm/rollup@4.18.0/node_modules/rollup/dist/shared/rollup.js:804:32)
+    at Object.error (/Users/phnl320160750/Development/storybook-repro/node_modules/.pnpm/rollup@4.18.0/node_modules/rollup/dist/shared/rollup.js:19790:42)
+    at generateDtsFromTs (file:///Users/phnl320160750/Development/storybook-repro/node_modules/.pnpm/rollup-plugin-dts@6.1.1_rollup@4.18.0_typescript@5.4.5/node_modules/rollup-plugin-dts/dist/rollup-plugin-dts.mjs:1834:30)
+    at Object.transform (file:///Users/phnl320160750/Development/storybook-repro/node_modules/.pnpm/rollup-plugin-dts@6.1.1_rollup@4.18.0_typescript@5.4.5/node_modules/rollup-plugin-dts/dist/rollup-plugin-dts.mjs:1843:38)
+    at /Users/phnl320160750/Development/storybook-repro/node_modules/.pnpm/rollup@4.18.0/node_modules/rollup/dist/shared/rollup.js:989:40[22m
+
+
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m

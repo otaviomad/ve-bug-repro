@@ -1,0 +1,54 @@
+{
+  "run": {
+    "command": "nx build button-react --verbose",
+    "startTime": "2024-06-14T12:33:59.060Z",
+    "endTime": "2024-06-14T12:34:18.409Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "icons-styles:build",
+      "target": "build",
+      "projectName": "icons-styles",
+      "hash": "13590496820394166252",
+      "startTime": "2024-06-14T12:33:59.069Z",
+      "endTime": "2024-06-14T12:34:04.021Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "button-styles:build",
+      "target": "build",
+      "projectName": "button-styles",
+      "hash": "6347030203681355555",
+      "startTime": "2024-06-14T12:33:59.069Z",
+      "endTime": "2024-06-14T12:34:04.026Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "icons-react:build",
+      "target": "build",
+      "projectName": "icons-react",
+      "hash": "15374503650389727140",
+      "startTime": "2024-06-14T12:34:04.023Z",
+      "endTime": "2024-06-14T12:34:16.091Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "button-react:build",
+      "target": "build",
+      "projectName": "button-react",
+      "hash": "5053201386464698366",
+      "startTime": "2024-06-14T12:34:16.091Z",
+      "endTime": "2024-06-14T12:34:18.408Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}
