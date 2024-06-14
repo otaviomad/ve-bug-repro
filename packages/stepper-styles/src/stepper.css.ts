@@ -1,12 +1,16 @@
 import { globalStyle, style } from "@vanilla-extract/css";
 import { button } from "button-styles";
 import { icon } from "icons-styles";
+import { base } from "base-styles";
 
-export const stepperContainer = style({
-  display: "flex",
-  alignItems: "stretch",
-  gap: "4px",
-});
+export const stepperContainer = style([
+  base,
+  {
+    display: "flex",
+    alignItems: "stretch",
+    gap: "4px",
+  },
+]);
 
 export const stepperInput = style({
   padding: "4px",

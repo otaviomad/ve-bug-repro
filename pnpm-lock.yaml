@@ -70,6 +70,19 @@ importers:
         specifier: ^5.4.5
         version: 5.4.5
 
+  packages/base-styles:
+    dependencies:
+      '@vanilla-extract/css':
+        specifier: ^1.15.3
+        version: 1.15.3
+    devDependencies:
+      rimraf:
+        specifier: ^5.0.7
+        version: 5.0.7
+      rollup:
+        specifier: ^4.18.0
+        version: 4.18.0
+
   packages/button-react:
     dependencies:
       '@vanilla-extract/css':
@@ -109,6 +122,9 @@ importers:
       '@vanilla-extract/css':
         specifier: ^1.15.3
         version: 1.15.3
+      base-styles:
+        specifier: workspace:^
+        version: link:../base-styles
     devDependencies:
       rimraf:
         specifier: ^5.0.7
@@ -256,6 +272,9 @@ importers:
       '@vanilla-extract/css':
         specifier: ^1.15.3
         version: 1.15.3
+      base-styles:
+        specifier: workspace:^
+        version: link:../base-styles
       button-styles:
         specifier: workspace:*
         version: link:../button-styles

@@ -427,6 +427,67 @@
         "tags": []
       }
     },
+    "base-styles": {
+      "name": "base-styles",
+      "type": "lib",
+      "data": {
+        "root": "packages/base-styles",
+        "name": "base-styles",
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "build",
+              "test",
+              "build",
+              "test"
+            ]
+          }
+        },
+        "targets": {
+          "build": {
+            "executor": "nx:run-script",
+            "metadata": {
+              "scriptContent": "rimraf dist && rollup -c",
+              "runCommand": "pnpm run build"
+            },
+            "inputs": [
+              "default",
+              "^default"
+            ],
+            "dependsOn": [
+              "^build"
+            ],
+            "options": {
+              "script": "build"
+            },
+            "configurations": {}
+          },
+          "test": {
+            "executor": "nx:run-script",
+            "metadata": {
+              "scriptContent": "echo \"Error: no test specified\" && exit 1",
+              "runCommand": "pnpm run test"
+            },
+            "options": {
+              "script": "test"
+            },
+            "configurations": {}
+          },
+          "nx-release-publish": {
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {}
+          }
+        },
+        "sourceRoot": "packages/base-styles",
+        "projectType": "library",
+        "implicitDependencies": [],
+        "tags": []
+      }
+    },
     "icons-react": {
       "name": "icons-react",
       "type": "lib",
@@ -9498,6 +9559,11 @@
         "source": "stepper-styles",
         "target": "icons-styles",
         "type": "static"
+      },
+      {
+        "source": "stepper-styles",
+        "target": "base-styles",
+        "type": "static"
       }
     ],
     "button-styles": [
@@ -9514,6 +9580,11 @@
       {
         "source": "button-styles",
         "target": "npm:@vanilla-extract/css",
+        "type": "static"
+      },
+      {
+        "source": "button-styles",
+        "target": "base-styles",
         "type": "static"
       }
     ],
@@ -9639,6 +9710,23 @@
       },
       {
         "source": "icons-styles",
+        "target": "npm:@vanilla-extract/css",
+        "type": "static"
+      }
+    ],
+    "base-styles": [
+      {
+        "source": "base-styles",
+        "target": "npm:rimraf@5.0.7",
+        "type": "static"
+      },
+      {
+        "source": "base-styles",
+        "target": "npm:rollup",
+        "type": "static"
+      },
+      {
+        "source": "base-styles",
         "target": "npm:@vanilla-extract/css",
         "type": "static"
       }

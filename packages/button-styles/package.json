@@ -2,8 +2,8 @@
   "name": "button-styles",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/index.css.js",
+  "types": "dist/index.css.d.ts",
   "scripts": {
     "build": "rimraf dist && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vanilla-extract/css": "^1.15.3"
+    "@vanilla-extract/css": "^1.15.3",
+    "base-styles": "workspace:^"
   },
   "devDependencies": {
     "rimraf": "^5.0.7",

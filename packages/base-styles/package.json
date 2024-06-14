@@ -1,0 +1,22 @@
+{
+  "name": "base-styles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.css.js",
+  "types": "dist/index.css.d.ts",
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vanilla-extract/css": "^1.15.3"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.7",
+    "rollup": "^4.18.0"
+  }
+}
