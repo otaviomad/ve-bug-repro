@@ -27,7 +27,7 @@ export const stepperInput = style({
 
 export const stepperButton = style({
   selectors: {
-    [`${stepperContainer} ${button} &`]: {
+    [`${stepperContainer} ${button}&`]: {
       padding: "2px",
     },
   },
