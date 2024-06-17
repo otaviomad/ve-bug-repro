@@ -1,5 +1,5 @@
-import { style } from "@vanilla-extract/css";
 import { base } from "base-styles";
+import { style } from "@vanilla-extract/css";
 
 export const button = style([
   base,

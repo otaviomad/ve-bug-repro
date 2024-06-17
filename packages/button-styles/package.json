@@ -2,8 +2,8 @@
   "name": "button-styles",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.css.js",
-  "types": "dist/index.css.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf dist && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"

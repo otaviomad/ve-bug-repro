@@ -1,7 +1,15 @@
 import { style } from "@vanilla-extract/css";
 
-export const base = style({
+export const fontFamilyBase = style({
   fontFamily: "Helvetica, sans-serif",
-  fontSize: "16px",
-  lineHeight: "1.5",
 });
+
+export const base = style([
+  fontFamilyBase,
+  {
+    fontSize: "16px",
+    lineHeight: "1.5",
+  },
+]);
+
+export const fullWidth = style({});

@@ -1,7 +1,7 @@
+import { base, fullWidth } from "base-styles";
 import { globalStyle, style } from "@vanilla-extract/css";
 import { button } from "button-styles";
 import { icon } from "icons-styles";
-import { base } from "base-styles";
 
 export const stepperContainer = style([
   base,
@@ -9,6 +9,12 @@ export const stepperContainer = style([
     display: "flex",
     alignItems: "stretch",
     gap: "4px",
+
+    selectors: {
+      [`&${fullWidth}`]: {
+        width: "100%",
+      },
+    },
   },
 ]);
 
@@ -21,7 +27,7 @@ export const stepperInput = style({
 
 export const stepperButton = style({
   selectors: {
-    [`${button}&`]: {
+    [`${stepperContainer} ${button} &`]: {
       padding: "2px",
     },
   },
